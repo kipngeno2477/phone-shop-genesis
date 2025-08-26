@@ -29,7 +29,7 @@ const Navigation: React.FC<NavigationProps> = ({
             </div>
             <div>
               <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                PhoneHub
+                centsoreske
               </h1>
               <p className="text-xs text-muted-foreground">Premium Phones</p>
             </div>
