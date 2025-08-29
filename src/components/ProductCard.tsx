@@ -1,5 +1,6 @@
 import React from 'react';
-import { ShoppingCart, Star, Zap, Badge as BadgeIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ShoppingCart, Star, Zap, Badge as BadgeIcon, Eye } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
@@ -124,15 +125,29 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             )}
           </div>
 
-          {/* Add to Cart Button */}
-          <Button
-            onClick={handleAddToCart}
-            disabled={!product.inStock}
-            className="w-full bg-gradient-primary hover:shadow-glow transition-spring hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <ShoppingCart className="w-4 h-4 mr-2" />
-            {product.inStock ? 'Add to Cart' : 'Out of Stock'}
-          </Button>
+          {/* Action Buttons */}
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              className="flex-1"
+              asChild
+            >
+              <Link to={`/product/${product.id}`}>
+                <Eye className="w-4 h-4 mr-1" />
+                View More
+              </Link>
+            </Button>
+            <Button
+              onClick={handleAddToCart}
+              disabled={!product.inStock}
+              size="sm"
+              className="flex-1 bg-gradient-primary hover:shadow-glow transition-spring hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <ShoppingCart className="w-4 h-4 mr-1" />
+              {product.inStock ? 'Add Cart' : 'Out of Stock'}
+            </Button>
+          </div>
         </div>
       </CardContent>
     </Card>
