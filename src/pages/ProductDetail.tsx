@@ -36,29 +36,50 @@ const ProductDetail = () => {
   const capacityOptions = ['128GB', '256GB', '512GB', '1TB'];
   const colorOptions = ['Space Black', 'Deep Purple', 'Gold', 'Silver'];
 
+  const needsCapacity = product.brand === 'Apple' || product.brand === 'Samsung';
+
   const handleAddToCart = () => {
-    if (!selectedCapacity || !selectedColor) {
+    // Require capacity only for phone products (Apple / Samsung). Color still required for all.
+    if (needsCapacity && !selectedCapacity) {
       toast({
-        title: "Please select options",
-        description: "Please select both capacity and color before adding to cart.",
-        variant: "destructive",
+        title: 'Please select options',
+        description: 'Please select a storage capacity before adding to cart.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    if (!selectedColor) {
+      toast({
+        title: 'Please select options',
+        description: 'Please select a color before adding to cart.',
+        variant: 'destructive',
       });
       return;
     }
 
     addItem(product);
     toast({
-      title: "Added to cart",
+      title: 'Added to cart',
       description: `${product.name} has been added to your cart.`,
     });
   };
 
   const handleWhatsAppOrder = () => {
-    if (!selectedCapacity || !selectedColor) {
+    if (needsCapacity && !selectedCapacity) {
       toast({
-        title: "Please select options",
-        description: "Please select both capacity and color before ordering.",
-        variant: "destructive",
+        title: 'Please select options',
+        description: 'Please select a storage capacity before ordering.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    if (!selectedColor) {
+      toast({
+        title: 'Please select options',
+        description: 'Please select a color before ordering.',
+        variant: 'destructive',
       });
       return;
     }
@@ -127,21 +148,24 @@ Please confirm availability and delivery details.`;
 
             {/* Options */}
             <div className="space-y-4">
-              <div>
-                <label className="text-sm font-medium mb-2 block">Storage Capacity</label>
-                <Select value={selectedCapacity} onValueChange={setSelectedCapacity}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select capacity" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {capacityOptions.map((capacity) => (
-                      <SelectItem key={capacity} value={capacity}>
-                        {capacity}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
+              { /* Only show storage capacity selector for phone products */ }
+              {needsCapacity && (
+                <div>
+                  <label className="text-sm font-medium mb-2 block">Storage Capacity</label>
+                  <Select value={selectedCapacity} onValueChange={setSelectedCapacity}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select capacity" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {capacityOptions.map((capacity) => (
+                        <SelectItem key={capacity} value={capacity}>
+                          {capacity}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+              )}
 
               <div>
                 <label className="text-sm font-medium mb-2 block">Color</label>
@@ -204,7 +228,7 @@ Please confirm availability and delivery details.`;
             <div className="space-y-3">
               <Button
                 onClick={handleAddToCart}
-                className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
+                className="w-full bg-blue-500 hover:opacity-90 transition-opacity"
                 size="lg"
               >
                 <ShoppingCart className="w-5 h-5 mr-2" />
@@ -214,7 +238,7 @@ Please confirm availability and delivery details.`;
               <Button
                 onClick={handleWhatsAppOrder}
                 variant="outline"
-                className="w-full"
+                className="w-full bg-green-600"
                 size="lg"
               >
                 Order via WhatsApp

@@ -188,7 +188,7 @@ Please confirm availability and delivery details.`;
                 
                 <Button
                   onClick={handleWhatsAppCheckout}
-                  className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
+                  className="w-full bg-green-400 hover:opacity-90 transition-opacity"
                   size="lg"
                 >
                   Order via WhatsApp

@@ -13,7 +13,7 @@ const About = () => {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            About centsoreske
+            About centstoresKE
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We are an independent company specializing in the sale and repair of all Apple Products.
@@ -74,7 +74,7 @@ const About = () => {
             </div>
             <div>
               <p className="font-medium">Email</p>
-              <p className="text-muted-foreground">info@centsoreske.co.ke</p>
+              <p className="text-muted-foreground">info@centstoresKE.co.ke</p>
             </div>
           </div>
         </div>

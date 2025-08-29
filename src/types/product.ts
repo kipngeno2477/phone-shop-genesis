@@ -1,7 +1,7 @@
 export interface Product {
   id: string;
   name: string;
-  brand: 'Apple' | 'Samsung';
+  brand: 'Apple' | 'Samsung' | 'Laptops' | 'Accessories';
   price: number;
   originalPrice?: number;
   description: string;

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import animatePlugin from 'tailwindcss-animate';
 
 export default {
 	darkMode: ["class"],
@@ -92,13 +93,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+
+				/* mobile menu slide/fade */
+				'slide-in-left': {
+					from: { transform: 'translateX(-20px)', opacity: '0' },
+					to: { transform: 'translateX(0)', opacity: '1' }
+				},
+				'slide-out-left': {
+					from: { transform: 'translateX(0)', opacity: '1' },
+					to: { transform: 'translateX(-20px)', opacity: '0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				/* mobile menu animations */
+				'slide-in-left': 'slide-in-left 300ms var(--tw-transition-timing-function)',
+				'slide-out-left': 'slide-out-left 200ms var(--tw-transition-timing-function)'
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [animatePlugin],
 } satisfies Config;
