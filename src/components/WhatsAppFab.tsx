@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PHONE = '+254720209187';
+const PHONE = '+254101125353'; // Replace with your phone number in international format
 const DEFAULT_TEXT = 'Hi, I have a question about a product.';
 
 const WhatsAppFab: React.FC = () => {

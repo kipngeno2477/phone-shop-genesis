@@ -136,8 +136,8 @@ const Navigation: React.FC<NavigationProps> = ({
             <Link to="/" className="flex items-center space-x-3">
               <div className="w-12 h-12 p-1 flex items-center justify-center">
                 <img
-                  src="https://pps.whatsapp.net/v/t61.24694-24/518231596_804134885652619_2924812174928637218_n.jpg?ccb=11-4&oh=01_Q5Aa2QE3TxRFkj3cR1QC0w6g_0UU-w7RuZvf7fyuvMPbYIZPLA&oe=68B574B7&_nc_sid=5e03e0&_nc_cat=104"
-                  alt="centsoreske logo"
+                  src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg"
+                  alt="centstoresKE logo"
                 />
               </div>
               <div>

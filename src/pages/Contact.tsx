@@ -23,13 +23,13 @@ const Contact = () => {
     }
 
     const body = `New contact form submission:\n\nName: ${name}\nEmail: ${email || '-'}\nPhone: ${phone}\nMessage: ${message}\n\nMap: ${MAP_LINK}`;
-    const url = `https://wa.me/254720209187?text=${encodeURIComponent(body)}`;
+    const url = `https://wa.me/254101125353?text=${encodeURIComponent(body)}`;
     window.open(url, '_blank');
   };
 
   const handleQuickWhatsApp = () => {
     const body = "Hi! I'd like to get more information about your products and services.";
-    const whatsappUrl = `https://wa.me/254720209187?text=${encodeURIComponent(body)}`;
+    const whatsappUrl = `https://wa.me/254101125353?text=${encodeURIComponent(body)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -74,7 +74,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg">+254 720 209 187</p>
+                <p className="text-lg">+254101125353</p>
                 <p className="text-muted-foreground">Call us for immediate assistance</p>
               </CardContent>
             </Card>
@@ -139,7 +139,7 @@ const Contact = () => {
             </Card>
 
             <div className="text-center text-sm text-muted-foreground">
-              Prefer calling? <a href="tel:+254720209187" className="text-primary underline">+254 720 209 187</a>
+              Prefer calling? <a href="tel:+254101125353" className="text-primary underline">+254 720 209 187</a>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ const Contact = () => {
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <Phone className="w-4 h-4 text-primary" />
-                    <span>+254 720 209 187</span>
+                    <span>+254101125353</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="w-4 h-4 text-primary" />
