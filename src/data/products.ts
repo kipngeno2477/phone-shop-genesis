@@ -1,418 +1,6 @@
 import { Product } from '../types/product';
 
 export const products: Product[] = [
-
-  {
-    id: 'samsung-s24-ultra',
-    name: 'Galaxy S24 Ultra',
-    brand: 'Samsung',
-    price: 175000,
-    description: 'The ultimate Galaxy experience with S Pen, 200MP camera, and AI-powered features.',
-    image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&h=600&fit=crop&q=80',
-    features: ['6.8" Dynamic AMOLED 2X', 'Snapdragon 8 Gen 3', '200MP camera system', 'Built-in S Pen'],
-    inStock: true,
-    isNew: true,
-    isBestSeller: true
-  },
-  {
-    id: 'samsung-s24-plus',
-    name: 'Galaxy S24 Plus',
-    brand: 'Samsung',
-    price: 155000,
-    description: 'Bigger display and battery for power users.',
-    image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&h=600&fit=crop&q=80',
-    features: ['6.7" Dynamic AMOLED', 'Snapdragon 8 Gen 3', 'Pro-level camera', 'Strong battery'],
-    inStock: true
-  },
-  {
-    id: 'samsung-s24',
-    name: 'Galaxy S24',
-    brand: 'Samsung',
-    price: 135000,
-    description: 'Flagship Galaxy performance in a compact form.',
-    image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&h=600&fit=crop&q=80',
-    features: ['6.2" Dynamic AMOLED', 'Snapdragon 8 Gen 3', 'Excellent camera', 'AI features'],
-    inStock: true
-  },
-  {
-    id: 'samsung-s23-ultra',
-    name: 'Galaxy S23 Ultra',
-    brand: 'Samsung',
-    price: 160000,
-    originalPrice: 180000,
-    description: 'Premium Galaxy with S Pen and advanced camera system.',
-    image: 'https://images.unsplash.com/photo-1678381937438-53b19c004d0c?w=600&h=600&fit=crop&q=80',
-    features: ['6.8" Dynamic AMOLED', 'Snapdragon 8 Gen 2', '200MP camera', 'S Pen included'],
-    inStock: true,
-    isBestSeller: true
-  },
-  {
-    id: 'samsung-s23-plus',
-    name: 'Galaxy S23 Plus',
-    brand: 'Samsung',
-    price: 140000,
-    description: 'Large display Galaxy with premium features.',
-    image: 'https://images.unsplash.com/photo-1678381937438-53b19c004d0c?w=600&h=600&fit=crop&q=80',
-    features: ['6.6" Dynamic AMOLED', 'Snapdragon 8 Gen 2', 'Triple camera', 'Fast charging'],
-    inStock: true
-  },
-  {
-    id: 'samsung-s23',
-    name: 'Galaxy S23',
-    brand: 'Samsung',
-    price: 125000,
-    originalPrice: 145000,
-    description: 'Premium Galaxy experience with enhanced night photography and all-day battery.',
-    image: 'https://images.unsplash.com/photo-1678381937438-53b19c004d0c?w=600&h=600&fit=crop&q=80',
-    features: ['6.1" Dynamic AMOLED 2X', 'Snapdragon 8 Gen 2', '50MP camera system', 'Wireless charging'],
-    inStock: true
-  },
-  {
-    id: 'samsung-z-fold5',
-    name: 'Galaxy Z Fold5',
-    brand: 'Samsung',
-    price: 245000,
-    description: 'The most powerful Galaxy yet. Unfold your world with the ultimate multitasking experience.',
-    image: 'https://images.unsplash.com/photo-1685520610290-39ffc3131ffa?w=600&h=600&fit=crop&q=80',
-    features: ['7.6" Main Display', 'Snapdragon 8 Gen 2', 'Flex Mode', 'Multi-window support'],
-    inStock: true,
-    isNew: true
-  },
-  {
-    id: 'samsung-z-flip5',
-    name: 'Galaxy Z Flip5',
-    brand: 'Samsung',
-    price: 170000,
-    description: 'Compact foldable with a sleek design and versatile camera.',
-    image: 'https://images.unsplash.com/photo-1685520610290-39ffc3131ffa?w=600&h=600&fit=crop&q=80',
-    features: ['Foldable display', 'Snapdragon 8 Gen 2', 'Flex Window', 'Compact when closed'],
-    inStock: true,
-    isNew: true
-  },
-  {
-    id: 'samsung-a54',
-    name: 'Galaxy A54',
-    brand: 'Samsung',
-    price: 45000,
-    description: 'Mid-range phone with balanced performance and battery life.',
-    image: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&h=600&fit=crop&q=80',
-    features: ['6.4" Super AMOLED', 'Exynos 1380', 'Solid battery', 'Good cameras'],
-    inStock: true
-  },
-  {
-    id: 'samsung-a34',
-    name: 'Galaxy A34',
-    brand: 'Samsung',
-    price: 38000,
-    description: 'Affordable smartphone with great display and cameras.',
-    image: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&h=600&fit=crop&q=80',
-    features: ['6.6" Super AMOLED', 'MediaTek Dimensity', 'Good cameras', 'Long battery'],
-    inStock: true
-  },
-  {
-    id: 'samsung-a14',
-    name: 'Galaxy A14',
-    brand: 'Samsung',
-    price: 25000,
-    description: 'Budget-friendly smartphone with essential features.',
-    image: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&h=600&fit=crop&q=80',
-    features: ['6.6" PLS LCD', 'MediaTek Helio', 'Triple camera', 'Expandable storage'],
-    inStock: true
-  },
-  {
-    id: 'samsung-m54',
-    name: 'Galaxy M54',
-    brand: 'Samsung',
-    price: 42000,
-    description: 'Mid-range phone with focus on battery life.',
-    image: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&h=600&fit=crop&q=80',
-    features: ['6.7" Super AMOLED', 'Exynos 1380', '6000mAh battery', 'Good performance'],
-    inStock: true
-  },
-  {
-    id: 'samsung-f54',
-    name: 'Galaxy F54',
-    brand: 'Samsung',
-    price: 40000,
-    description: 'Feature-packed smartphone with great camera system.',
-    image: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&h=600&fit=crop&q=80',
-    features: ['6.7" Super AMOLED', 'Exynos 1380', '108MP camera', 'Good battery'],
-    inStock: true
-  },
-  {
-    id: 'samsung-s22-ultra',
-    name: 'Galaxy S22 Ultra',
-    brand: 'Samsung',
-    price: 140000,
-    originalPrice: 160000,
-    description: 'Previous flagship with S Pen and excellent cameras.',
-    image: 'https://images.unsplash.com/photo-1649180556195-9c5a0cdc2d5c?w=600&h=600&fit=crop&q=80',
-    features: ['6.8" Dynamic AMOLED', 'Snapdragon 8 Gen 1', '108MP camera', 'S Pen support'],
-    inStock: true
-  },
-  {
-    id: 'samsung-s22-plus',
-    name: 'Galaxy S22 Plus',
-    brand: 'Samsung',
-    price: 120000,
-    description: 'Large display flagship with premium features.',
-    image: 'https://images.unsplash.com/photo-1649180556195-9c5a0cdc2d5c?w=600&h=600&fit=crop&q=80',
-    features: ['6.6" Dynamic AMOLED', 'Snapdragon 8 Gen 1', 'Triple camera', 'Fast charging'],
-    inStock: true
-  },
-  {
-    id: 'samsung-s22',
-    name: 'Galaxy S22',
-    brand: 'Samsung',
-    price: 105000,
-    description: 'Compact flagship with powerful performance.',
-    image: 'https://images.unsplash.com/photo-1649180556195-9c5a0cdc2d5c?w=600&h=600&fit=crop&q=80',
-    features: ['6.1" Dynamic AMOLED', 'Snapdragon 8 Gen 1', 'Triple camera', 'Wireless charging'],
-    inStock: true
-  },
-  {
-    id: 'samsung-s21-fe',
-    name: 'Galaxy S21 FE',
-    brand: 'Samsung',
-    price: 85000,
-    description: 'Fan edition with flagship features at a better price.',
-    image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&h=600&fit=crop&q=80',
-    features: ['6.4" Dynamic AMOLED', 'Snapdragon 888', 'Triple camera', 'All-day battery'],
-    inStock: true
-  },
-  {
-    id: 'samsung-s20-fe',
-    name: 'Galaxy S20 FE',
-    brand: 'Samsung',
-    price: 65000,
-    description: 'Popular fan edition with great value.',
-    image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&h=600&fit=crop&q=80',
-    features: ['6.5" Super AMOLED', 'Snapdragon 865', 'Triple camera', '120Hz display'],
-    inStock: true
-  },
-  {
-    id: 'samsung-note20-ultra',
-    name: 'Galaxy Note20 Ultra',
-    brand: 'Samsung',
-    price: 130000,
-    originalPrice: 150000,
-    description: 'Last of the Note series with S Pen and premium features.',
-    image: 'https://images.unsplash.com/photo-1598324789736-4861f89564a0?w=600&h=600&fit=crop&q=80',
-    features: ['6.9" Dynamic AMOLED', 'Snapdragon 865+', '108MP camera', 'S Pen included'],
-    inStock: true
-  },
-  {
-    id: 'samsung-z-fold4',
-    name: 'Galaxy Z Fold4',
-    brand: 'Samsung',
-    price: 210000,
-    description: 'Previous generation foldable with great multitasking.',
-    image: 'https://images.unsplash.com/photo-1662941485888-c94d15cda0e8?w=600&h=600&fit=crop&q=80',
-    features: ['7.6" Main Display', 'Snapdragon 8+ Gen 1', 'Under-display camera', 'Multi-tasking'],
-    inStock: true
-  },
-
-  {
-    id: 'hp-elitebook-840-g10',
-    name: 'HP EliteBook 840 G10',
-    brand: 'Laptops',
-    price: 81250,
-    description: 'i7 (13th Gen) – 16GB Ram – 512GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/61e8YDC5lsL._AC_UY218_.jpg',
-    features: ['i7 13th Gen', '16GB RAM', '512GB SSD', '14" Display'],
-    inStock: true,
-    isNew: true
-  },
-  {
-    id: 'hp-elitebook-840-g9-i7',
-    name: 'HP EliteBook 840 G9',
-    brand: 'Laptops',
-    price: 68750,
-    description: 'i7 (12th Gen) – 16GB Ram – 512GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/81nmgaAQBlL._AC_UY218_.jpg',
-    features: ['i7 12th Gen', '16GB RAM', '512GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g9-i5',
-    name: 'HP EliteBook 840 G9',
-    brand: 'Laptops',
-    price: 56250,
-    description: 'i5 (12th Gen) – 16GB Ram – 512GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/61cchgUmecL._AC_SX425_.jpg',
-    features: ['i5 12th Gen', '16GB RAM', '512GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g8-i7',
-    name: 'HP EliteBook 840 G8',
-    brand: 'Laptops',
-    price: 56250,
-    description: 'i7 (11th Gen) – 16GB Ram – 512GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/61DIr6j2hzL._AC_SX425_.jpg',
-    features: ['i7 11th Gen', '16GB RAM', '512GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g8-i5',
-    name: 'HP EliteBook 840 G8',
-    brand: 'Laptops',
-    price: 43750,
-    description: 'i5 (11th Gen) – 16GB Ram – 512GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/61CpkecRYPL._AC_SX425_.jpg',
-    features: ['i5 11th Gen', '16GB RAM', '512GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g7-i7-512',
-    name: 'HP EliteBook 840 G7',
-    brand: 'Laptops',
-    price: 47500,
-    description: 'i7 (10th Gen) – 16GB Ram – 512GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/51QOSm7-7mL._AC_SX425_.jpg',
-    features: ['i7 10th Gen', '16GB RAM', '512GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g7-i7-256',
-    name: 'HP EliteBook 840 G7',
-    brand: 'Laptops',
-    price: 40000,
-    description: 'i7 (10th Gen) – 16GB Ram – 256GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/71ThatPc3yL._AC_SX425_.jpg',
-    features: ['i7 10th Gen', '16GB RAM', '256GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g7-i5',
-    name: 'HP EliteBook 840 G7',
-    brand: 'Laptops',
-    price: 41250,
-    description: 'i5 (10th Gen) – 16GB Ram – 512GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/618SEZ7McKL._AC_SX425_.jpg',
-    features: ['i5 10th Gen', '16GB RAM', '512GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g6',
-    name: 'HP EliteBook 840 G6',
-    brand: 'Laptops',
-    price: 40000,
-    description: 'i7 (8th Gen) – 16GB Ram – 512GB SSD – 14" Touch display',
-    image: 'https://m.media-amazon.com/images/I/91W+kW4VUZL._AC_SX425_.jpg',
-    features: ['i7 8th Gen', '16GB RAM', '512GB SSD', '14" Touch'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g5-i7-8gb',
-    name: 'HP EliteBook 840 G5',
-    brand: 'Laptops',
-    price: 33000,
-    description: 'i7 (8th Gen) – 8GB Ram – 512GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/71NyqMVjKeL._AC_SX425_.jpg',
-    features: ['i7 8th Gen', '8GB RAM', '512GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g5-i7-16gb',
-    name: 'HP EliteBook 840 G5',
-    brand: 'Laptops',
-    price: 36000,
-    description: 'i7 (8th Gen) – 16GB Ram – 512GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/51ug1GsL7fL._AC_SX425_.jpg',
-    features: ['i7 8th Gen', '16GB RAM', '512GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g4',
-    name: 'HP EliteBook 840 G4',
-    brand: 'Laptops',
-    price: 25000,
-    description: 'i5 (7th Gen) – 8GB Ram – 256GB SSD – 14" Touch display',
-    image: 'https://m.media-amazon.com/images/I/81mYNL-m2DL._AC_SL1500_.jpg',
-    features: ['i5 7th Gen', '8GB RAM', '256GB SSD', '14" Touch'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g3',
-    name: 'HP EliteBook 840 G3',
-    brand: 'Laptops',
-    price: 23500,
-    description: 'i5 (6th Gen) – 8GB Ram – 256GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/61PrrvBXAkL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
-    features: ['i5 6th Gen', '8GB RAM', '256GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g2',
-    name: 'HP EliteBook 840 G2',
-    brand: 'Laptops',
-    price: 18500,
-    description: 'i5 (5th Gen) – 8GB Ram – 500GB SSHDD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/61vI0ND-dWL.__AC_SY300_SX300_QL70_FMwebp_.jpg',
-    features: ['i5 5th Gen', '8GB RAM', '500GB SSHDD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-840-g1',
-    name: 'HP EliteBook 840 G1',
-    brand: 'Laptops',
-    price: 20000,
-    description: 'i5 (4th Gen) – 8GB Ram – 256GB SSD – 14" display',
-    image: 'https://m.media-amazon.com/images/I/61KSzFxwGHS._AC_SL1500_.jpg',
-    features: ['i5 4th Gen', '8GB RAM', '256GB SSD', '14" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-820-g3',
-    name: 'HP EliteBook 820 G3',
-    brand: 'Laptops',
-    price: 21500,
-    description: 'i5 (6th Gen) – 8GB Ram – 256GB SSD – 12.5" display',
-    image: 'https://m.media-amazon.com/images/I/61EIuXpvzEL._AC_SL1500_.jpg',
-    features: ['i5 6th Gen', '8GB RAM', '256GB SSD', '12.5" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-820-g1-hdd',
-    name: 'HP EliteBook 820 G1',
-    brand: 'Laptops',
-    price: 18000,
-    description: 'i5 (4th Gen) – 8GB Ram – 500GB HDD – 12.5" display',
-    image: 'https://m.media-amazon.com/images/I/71vSC5vqQJL._AC_SX425_.jpg',
-    features: ['i5 4th Gen', '8GB RAM', '500GB HDD', '12.5" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-820-g1-ssd',
-    name: 'HP EliteBook 820 G1',
-    brand: 'Laptops',
-    price: 19500,
-    description: 'i5 (4th Gen) – 8GB Ram – 256GB SSD – 12.5" display',
-    image: 'https://m.media-amazon.com/images/I/61rFa+RkorL._AC_SX425_.jpg',
-    features: ['i5 4th Gen', '8GB RAM', '256GB SSD', '12.5" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-830-g9',
-    name: 'HP EliteBook 830 G9',
-    brand: 'Laptops',
-    price: 62500,
-    description: 'i7 (12th Gen) – 16GB Ram – 512GB SSD – 13.3" display',
-    image: 'https://m.media-amazon.com/images/I/61HsnV8L7uL._AC_SX679_.jpg',
-    features: ['i7 12th Gen', '16GB RAM', '512GB SSD', '13.3" Display'],
-    inStock: true
-  },
-  {
-    id: 'hp-elitebook-830-g8-i7',
-    name: 'HP EliteBook 830 G8',
-    brand: 'Laptops',
-    price: 50000,
-    description: 'i7 (11th Gen) – 16GB Ram – 512GB SSD – 13.3" display',
-    image: 'https://m.media-amazon.com/images/I/61V-l6vc+bL._AC_SX425_.jpg',
-    features: ['i7 11th Gen', '16GB RAM', '512GB SSD', '13.3" Display'],
-    inStock: true
-  },
   // iPhone Products (20 items)
 {
 id: 'iphone-xr-128gb',
@@ -807,6 +395,418 @@ image: 'https://i.pinimg.com/736x/1b/c6/1d/1bc61d2f8bf09fc1bf1b6794b111f709.jpg'
 features: ['7.6" Main Display', 'Snapdragon 8+ Gen 1', 'Under-display camera', 'Multi-tasking'],
 inStock: true
 },
+
+  {
+    id: 'samsung-s24-ultra',
+    name: 'Galaxy S24 Ultra',
+    brand: 'Samsung',
+    price: 175000,
+    description: 'The ultimate Galaxy experience with S Pen, 200MP camera, and AI-powered features.',
+    image: 'https://i.pinimg.com/736x/8d/48/62/8d4862ea00ed6b72492ca7d30b42ea78.jpg',
+    features: ['6.8" Dynamic AMOLED 2X', 'Snapdragon 8 Gen 3', '200MP camera system', 'Built-in S Pen'],
+    inStock: true,
+    isNew: true,
+    isBestSeller: true
+  },
+  {
+    id: 'samsung-s24-plus',
+    name: 'Galaxy S24 Plus',
+    brand: 'Samsung',
+    price: 155000,
+    description: 'Bigger display and battery for power users.',
+    image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&h=600&fit=crop&q=80',
+    features: ['6.7" Dynamic AMOLED', 'Snapdragon 8 Gen 3', 'Pro-level camera', 'Strong battery'],
+    inStock: true
+  },
+  {
+    id: 'samsung-s24',
+    name: 'Galaxy S24',
+    brand: 'Samsung',
+    price: 135000,
+    description: 'Flagship Galaxy performance in a compact form.',
+    image: 'https://m.media-amazon.com/images/I/51E3rux4DgL._AC_SX569_.jpg',
+    features: ['6.2" Dynamic AMOLED', 'Snapdragon 8 Gen 3', 'Excellent camera', 'AI features'],
+    inStock: true
+  },
+  {
+    id: 'samsung-s23-ultra',
+    name: 'Galaxy S23 Ultra',
+    brand: 'Samsung',
+    price: 160000,
+    originalPrice: 180000,
+    description: 'Premium Galaxy with S Pen and advanced camera system.',
+    image: 'https://m.media-amazon.com/images/I/513vXUcPFrL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
+    features: ['6.8" Dynamic AMOLED', 'Snapdragon 8 Gen 2', '200MP camera', 'S Pen included'],
+    inStock: true,
+    isBestSeller: true
+  },
+  {
+    id: 'samsung-s23-plus',
+    name: 'Galaxy S23 Plus',
+    brand: 'Samsung',
+    price: 140000,
+    description: 'Large display Galaxy with premium features.',
+    image: 'https://m.media-amazon.com/images/I/61kakR7bIyL._AC_SX679_.jpg',
+    features: ['6.6" Dynamic AMOLED', 'Snapdragon 8 Gen 2', 'Triple camera', 'Fast charging'],
+    inStock: true
+  },
+  {
+    id: 'samsung-s23',
+    name: 'Galaxy S23',
+    brand: 'Samsung',
+    price: 125000,
+    originalPrice: 145000,
+    description: 'Premium Galaxy experience with enhanced night photography and all-day battery.',
+    image: 'https://i.pinimg.com/736x/74/50/d3/7450d35e89ea5297cec3a9b790b39627.jpg',
+    features: ['6.1" Dynamic AMOLED 2X', 'Snapdragon 8 Gen 2', '50MP camera system', 'Wireless charging'],
+    inStock: true
+  },
+  {
+    id: 'samsung-z-fold5',
+    name: 'Galaxy Z Fold5',
+    brand: 'Samsung',
+    price: 245000,
+    description: 'The most powerful Galaxy yet. Unfold your world with the ultimate multitasking experience.',
+    image: 'https://i.pinimg.com/1200x/82/95/51/82955150bf508bc7177a9c1ef66c5cba.jpg',
+    features: ['7.6" Main Display', 'Snapdragon 8 Gen 2', 'Flex Mode', 'Multi-window support'],
+    inStock: true,
+    isNew: true
+  },
+  {
+    id: 'samsung-z-flip5',
+    name: 'Galaxy Z Flip5',
+    brand: 'Samsung',
+    price: 170000,
+    description: 'Compact foldable with a sleek design and versatile camera.',
+    image: 'https://m.media-amazon.com/images/I/51DfOhNs2yL._AC_SX569_.jpg',
+    features: ['Foldable display', 'Snapdragon 8 Gen 2', 'Flex Window', 'Compact when closed'],
+    inStock: true,
+    isNew: true
+  },
+  {
+    id: 'samsung-a54',
+    name: 'Galaxy A54',
+    brand: 'Samsung',
+    price: 45000,
+    description: 'Mid-range phone with balanced performance and battery life.',
+    image: 'https://i.pinimg.com/736x/41/c9/b4/41c9b479009e4379cc67178263f80393.jpg',
+    features: ['6.4" Super AMOLED', 'Exynos 1380', 'Solid battery', 'Good cameras'],
+    inStock: true
+  },
+  {
+    id: 'samsung-a34',
+    name: 'Galaxy A34',
+    brand: 'Samsung',
+    price: 38000,
+    description: 'Affordable smartphone with great display and cameras.',
+    image: 'https://i.pinimg.com/1200x/87/aa/a5/87aaa5502a6807f60e14d30b0488bd51.jpg',
+    features: ['6.6" Super AMOLED', 'MediaTek Dimensity', 'Good cameras', 'Long battery'],
+    inStock: true
+  },
+  {
+    id: 'samsung-a14',
+    name: 'Galaxy A14',
+    brand: 'Samsung',
+    price: 25000,
+    description: 'Budget-friendly smartphone with essential features.',
+    image: 'https://i.pinimg.com/736x/aa/a8/20/aaa82068e6dda755c90dfaa2a2517eb4.jpg',
+    features: ['6.6" PLS LCD', 'MediaTek Helio', 'Triple camera', 'Expandable storage'],
+    inStock: true
+  },
+  {
+    id: 'samsung-m54',
+    name: 'Galaxy M54',
+    brand: 'Samsung',
+    price: 42000,
+    description: 'Mid-range phone with focus on battery life.',
+    image: 'https://i.pinimg.com/1200x/4b/8c/23/4b8c233287a983185b7da1bbc83281e5.jpg',
+    features: ['6.7" Super AMOLED', 'Exynos 1380', '6000mAh battery', 'Good performance'],
+    inStock: true
+  },
+  {
+    id: 'samsung-f54',
+    name: 'Galaxy F54',
+    brand: 'Samsung',
+    price: 40000,
+    description: 'Feature-packed smartphone with great camera system.',
+    image: 'https://i.pinimg.com/736x/9b/75/76/9b75763fa8942457adf94b09a5792a57.jpg',
+    features: ['6.7" Super AMOLED', 'Exynos 1380', '108MP camera', 'Good battery'],
+    inStock: true
+  },
+  {
+    id: 'samsung-s22-ultra',
+    name: 'Galaxy S22 Ultra',
+    brand: 'Samsung',
+    price: 140000,
+    originalPrice: 160000,
+    description: 'Previous flagship with S Pen and excellent cameras.',
+    image: 'https://i.pinimg.com/736x/3f/c7/49/3fc749cd109d3c8719ee5c4af307ae74.jpg',
+    features: ['6.8" Dynamic AMOLED', 'Snapdragon 8 Gen 1', '108MP camera', 'S Pen support'],
+    inStock: true
+  },
+  {
+    id: 'samsung-s22-plus',
+    name: 'Galaxy S22 Plus',
+    brand: 'Samsung',
+    price: 120000,
+    description: 'Large display flagship with premium features.',
+    image: 'https://i.pinimg.com/736x/99/c4/a5/99c4a526eb5b3a26adb4aed4849accba.jpg',
+    features: ['6.6" Dynamic AMOLED', 'Snapdragon 8 Gen 1', 'Triple camera', 'Fast charging'],
+    inStock: true
+  },
+  {
+    id: 'samsung-s22',
+    name: 'Galaxy S22',
+    brand: 'Samsung',
+    price: 105000,
+    description: 'Compact flagship with powerful performance.',
+    image: 'https://i.pinimg.com/1200x/3d/b1/b2/3db1b2cf6dc91f3ae7ce5628d357f6f9.jpg',
+    features: ['6.1" Dynamic AMOLED', 'Snapdragon 8 Gen 1', 'Triple camera', 'Wireless charging'],
+    inStock: true
+  },
+  {
+    id: 'samsung-s21-fe',
+    name: 'Galaxy S21 FE',
+    brand: 'Samsung',
+    price: 85000,
+    description: 'Fan edition with flagship features at a better price.',
+    image: 'https://i.pinimg.com/736x/3a/a9/2a/3aa92a4241d8dc261581752d4b0af8f2.jpg',
+    features: ['6.4" Dynamic AMOLED', 'Snapdragon 888', 'Triple camera', 'All-day battery'],
+    inStock: true
+  },
+  {
+    id: 'samsung-s20-fe',
+    name: 'Galaxy S20 FE',
+    brand: 'Samsung',
+    price: 65000,
+    description: 'Popular fan edition with great value.',
+    image: 'https://i.pinimg.com/1200x/fd/8a/bd/fd8abd1c22f52746c4c59a49323a7ed6.jpg',
+    features: ['6.5" Super AMOLED', 'Snapdragon 865', 'Triple camera', '120Hz display'],
+    inStock: true
+  },
+  {
+    id: 'samsung-note20-ultra',
+    name: 'Galaxy Note20 Ultra',
+    brand: 'Samsung',
+    price: 130000,
+    originalPrice: 150000,
+    description: 'Last of the Note series with S Pen and premium features.',
+    image: 'https://i.pinimg.com/1200x/0e/43/de/0e43dea6d2457b753d34e33304057c27.jpg',
+    features: ['6.9" Dynamic AMOLED', 'Snapdragon 865+', '108MP camera', 'S Pen included'],
+    inStock: true
+  },
+  {
+    id: 'samsung-z-fold4',
+    name: 'Galaxy Z Fold4',
+    brand: 'Samsung',
+    price: 210000,
+    description: 'Previous generation foldable with great multitasking.',
+    image: 'https://i.pinimg.com/736x/1b/c6/1d/1bc61d2f8bf09fc1bf1b6794b111f709.jpg',
+    features: ['7.6" Main Display', 'Snapdragon 8+ Gen 1', 'Under-display camera', 'Multi-tasking'],
+    inStock: true
+  },
+
+  {
+    id: 'hp-elitebook-840-g10',
+    name: 'HP EliteBook 840 G10',
+    brand: 'Laptops',
+    price: 81250,
+    description: 'i7 (13th Gen) – 16GB Ram – 512GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/61e8YDC5lsL._AC_UY218_.jpg',
+    features: ['i7 13th Gen', '16GB RAM', '512GB SSD', '14" Display'],
+    inStock: true,
+    isNew: true
+  },
+  {
+    id: 'hp-elitebook-840-g9-i7',
+    name: 'HP EliteBook 840 G9',
+    brand: 'Laptops',
+    price: 68750,
+    description: 'i7 (12th Gen) – 16GB Ram – 512GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/81nmgaAQBlL._AC_UY218_.jpg',
+    features: ['i7 12th Gen', '16GB RAM', '512GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g9-i5',
+    name: 'HP EliteBook 840 G9',
+    brand: 'Laptops',
+    price: 56250,
+    description: 'i5 (12th Gen) – 16GB Ram – 512GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/61cchgUmecL._AC_SX425_.jpg',
+    features: ['i5 12th Gen', '16GB RAM', '512GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g8-i7',
+    name: 'HP EliteBook 840 G8',
+    brand: 'Laptops',
+    price: 56250,
+    description: 'i7 (11th Gen) – 16GB Ram – 512GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/61DIr6j2hzL._AC_SX425_.jpg',
+    features: ['i7 11th Gen', '16GB RAM', '512GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g8-i5',
+    name: 'HP EliteBook 840 G8',
+    brand: 'Laptops',
+    price: 43750,
+    description: 'i5 (11th Gen) – 16GB Ram – 512GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/61CpkecRYPL._AC_SX425_.jpg',
+    features: ['i5 11th Gen', '16GB RAM', '512GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g7-i7-512',
+    name: 'HP EliteBook 840 G7',
+    brand: 'Laptops',
+    price: 47500,
+    description: 'i7 (10th Gen) – 16GB Ram – 512GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/51QOSm7-7mL._AC_SX425_.jpg',
+    features: ['i7 10th Gen', '16GB RAM', '512GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g7-i7-256',
+    name: 'HP EliteBook 840 G7',
+    brand: 'Laptops',
+    price: 40000,
+    description: 'i7 (10th Gen) – 16GB Ram – 256GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/71ThatPc3yL._AC_SX425_.jpg',
+    features: ['i7 10th Gen', '16GB RAM', '256GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g7-i5',
+    name: 'HP EliteBook 840 G7',
+    brand: 'Laptops',
+    price: 41250,
+    description: 'i5 (10th Gen) – 16GB Ram – 512GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/618SEZ7McKL._AC_SX425_.jpg',
+    features: ['i5 10th Gen', '16GB RAM', '512GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g6',
+    name: 'HP EliteBook 840 G6',
+    brand: 'Laptops',
+    price: 40000,
+    description: 'i7 (8th Gen) – 16GB Ram – 512GB SSD – 14" Touch display',
+    image: 'https://m.media-amazon.com/images/I/91W+kW4VUZL._AC_SX425_.jpg',
+    features: ['i7 8th Gen', '16GB RAM', '512GB SSD', '14" Touch'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g5-i7-8gb',
+    name: 'HP EliteBook 840 G5',
+    brand: 'Laptops',
+    price: 33000,
+    description: 'i7 (8th Gen) – 8GB Ram – 512GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/71NyqMVjKeL._AC_SX425_.jpg',
+    features: ['i7 8th Gen', '8GB RAM', '512GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g5-i7-16gb',
+    name: 'HP EliteBook 840 G5',
+    brand: 'Laptops',
+    price: 36000,
+    description: 'i7 (8th Gen) – 16GB Ram – 512GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/51ug1GsL7fL._AC_SX425_.jpg',
+    features: ['i7 8th Gen', '16GB RAM', '512GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g4',
+    name: 'HP EliteBook 840 G4',
+    brand: 'Laptops',
+    price: 25000,
+    description: 'i5 (7th Gen) – 8GB Ram – 256GB SSD – 14" Touch display',
+    image: 'https://m.media-amazon.com/images/I/81mYNL-m2DL._AC_SL1500_.jpg',
+    features: ['i5 7th Gen', '8GB RAM', '256GB SSD', '14" Touch'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g3',
+    name: 'HP EliteBook 840 G3',
+    brand: 'Laptops',
+    price: 23500,
+    description: 'i5 (6th Gen) – 8GB Ram – 256GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/61PrrvBXAkL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
+    features: ['i5 6th Gen', '8GB RAM', '256GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g2',
+    name: 'HP EliteBook 840 G2',
+    brand: 'Laptops',
+    price: 18500,
+    description: 'i5 (5th Gen) – 8GB Ram – 500GB SSHDD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/61vI0ND-dWL.__AC_SY300_SX300_QL70_FMwebp_.jpg',
+    features: ['i5 5th Gen', '8GB RAM', '500GB SSHDD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-840-g1',
+    name: 'HP EliteBook 840 G1',
+    brand: 'Laptops',
+    price: 20000,
+    description: 'i5 (4th Gen) – 8GB Ram – 256GB SSD – 14" display',
+    image: 'https://m.media-amazon.com/images/I/61KSzFxwGHS._AC_SL1500_.jpg',
+    features: ['i5 4th Gen', '8GB RAM', '256GB SSD', '14" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-820-g3',
+    name: 'HP EliteBook 820 G3',
+    brand: 'Laptops',
+    price: 21500,
+    description: 'i5 (6th Gen) – 8GB Ram – 256GB SSD – 12.5" display',
+    image: 'https://m.media-amazon.com/images/I/61EIuXpvzEL._AC_SL1500_.jpg',
+    features: ['i5 6th Gen', '8GB RAM', '256GB SSD', '12.5" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-820-g1-hdd',
+    name: 'HP EliteBook 820 G1',
+    brand: 'Laptops',
+    price: 18000,
+    description: 'i5 (4th Gen) – 8GB Ram – 500GB HDD – 12.5" display',
+    image: 'https://m.media-amazon.com/images/I/71vSC5vqQJL._AC_SX425_.jpg',
+    features: ['i5 4th Gen', '8GB RAM', '500GB HDD', '12.5" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-820-g1-ssd',
+    name: 'HP EliteBook 820 G1',
+    brand: 'Laptops',
+    price: 19500,
+    description: 'i5 (4th Gen) – 8GB Ram – 256GB SSD – 12.5" display',
+    image: 'https://m.media-amazon.com/images/I/61rFa+RkorL._AC_SX425_.jpg',
+    features: ['i5 4th Gen', '8GB RAM', '256GB SSD', '12.5" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-830-g9',
+    name: 'HP EliteBook 830 G9',
+    brand: 'Laptops',
+    price: 62500,
+    description: 'i7 (12th Gen) – 16GB Ram – 512GB SSD – 13.3" display',
+    image: 'https://m.media-amazon.com/images/I/61HsnV8L7uL._AC_SX679_.jpg',
+    features: ['i7 12th Gen', '16GB RAM', '512GB SSD', '13.3" Display'],
+    inStock: true
+  },
+  {
+    id: 'hp-elitebook-830-g8-i7',
+    name: 'HP EliteBook 830 G8',
+    brand: 'Laptops',
+    price: 50000,
+    description: 'i7 (11th Gen) – 16GB Ram – 512GB SSD – 13.3" display',
+    image: 'https://m.media-amazon.com/images/I/61V-l6vc+bL._AC_SX425_.jpg',
+    features: ['i7 11th Gen', '16GB RAM', '512GB SSD', '13.3" Display'],
+    inStock: true
+  },
 
   // Accessories Products (20 items)
 {

@@ -93,7 +93,7 @@ Price: KSh ${product.price.toLocaleString()}
 
 Please confirm availability and delivery details.`;
 
-    const whatsappUrl = `https://wa.me/254720209187?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+254101125353?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

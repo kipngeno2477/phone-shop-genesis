@@ -35,8 +35,8 @@ const Footer: React.FC = () => {
 
           <div>
             <h4 className="text-white font-semibold mb-3">Contact</h4>
-            <p className="text-sm">Phone: <a className="text-gray-300 hover:text-white" href="tel:+254720209187">+254 720 209 187</a></p>
-            <p className="text-sm mt-2">Email: <a className="text-gray-300 hover:text-white" href="mailto:info@centsoreske.co.ke">info@centsoreske.co.ke</a></p>
+            <p className="text-sm">Phone: <a className="text-gray-300 hover:text-white" href="tel:++254101125353">++254101125353</a></p>
+            <p className="text-sm mt-2">Email: <a className="text-gray-300 hover:text-white" href="mailto:info@centsoreske.co.ke">info@centstoresKe.co.ke</a></p>
             <p className="text-sm mt-4">Kenya — Open weekdays</p>
           </div>
         </div>

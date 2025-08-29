@@ -139,7 +139,7 @@ const Contact = () => {
             </Card>
 
             <div className="text-center text-sm text-muted-foreground">
-              Prefer calling? <a href="tel:+254101125353" className="text-primary underline">+254 720 209 187</a>
+              Prefer calling? <a href="tel:+254101125353" className="text-primary underline">+254101125353</a>
             </div>
           </div>
         </div>

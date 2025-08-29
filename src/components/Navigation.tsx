@@ -129,19 +129,19 @@ const Navigation: React.FC<NavigationProps> = ({
 
   return (
     <>
-      <nav className="sticky top-0 z-50 glass border-b">
+      <nav className="sticky top-0 bg-blue-100 z-50 glass border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <div className="w-12 h-12 p-1 flex items-center justify-center">
                 <img
-                  src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg"
+                  src="https://static.vecteezy.com/system/resources/previews/020/489/291/non_2x/3d-logo-of-apple-iphone-free-png.png"
                   alt="centstoresKE logo"
                 />
               </div>
               <div>
-                <h1 className="text-xl bg-gradient-primary bg-clip-text text-blue-600">
+                <h1 className="text-xl bg-blue-100 bg-clip-text text-blue-600">
                   centstoresKE
                 </h1>
                 <p className="text-xs font-semibold text-black">Premium Phones & Laptops</p>
