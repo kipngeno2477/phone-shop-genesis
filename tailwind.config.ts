@@ -11,6 +11,9 @@ export default {
 	],
 	prefix: "",
 	theme: {
+		fontFamily: {
+			'sans': ['Poppins', 'ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif']
+		},
 		container: {
 			center: true,
 			padding: '2rem',
